@@ -8,7 +8,7 @@
 
 ---
 
-How to Run
+### **How to Run**
 1. **Save the script to a file:**
    Save the script as, for example, `backup.sh`:
    ```bash
@@ -43,11 +43,3 @@ To automate the backup process, use `cron`:
 
 ---
 
-### **Improvements**
-- **Notifications:** Send an email or Slack message upon completion.
-- **Logging:** Save backup details to a log file for easier tracking.
-- **Old Backups Cleanup:** Automatically delete backups older than a specific duration. For example:
-  ```bash
-  find /path/to/backup/folder -type f -name "*.zip" -mtime +30 -exec rm {} \;
-  ```
-  This removes backups older than 30 days.
